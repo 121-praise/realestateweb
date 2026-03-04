@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronLeft, ChevronRight, HomeIcon, Building2, Ruler, Wrench, Palette, Star } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Home as HomeIcon, Building2, Ruler, Wrench, Palette, Star } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const heroSlides = [
