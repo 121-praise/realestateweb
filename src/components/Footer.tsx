@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building2, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
               <img
                       src="/logo.jpg"
                       alt="Pervenu Properties Logo"
-                      className={`h-8 w-auto transition-opacity`}
+                      className={`h-10 w-auto transition-opacity`}
       />
               <div>
                 <span className="text-sm font-bold text-white">Pervenu Homes</span>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Building2, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,9 +41,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            <Building2 className={`h-8 w-8 transition-colors ${
-              isScrolled ? 'text-amber-600' : 'text-white'
-            }`} />
+            <img
+                  src="/logo.jpg"
+                  alt="Pervenu Properties Logo"
+                  className={`h-12 w-auto transition-opacity ${
+                    isScrolled ? "opacity-100" : "opacity-80"
+                  }`}
+/>
             <div>
               <span className={`text-sm font-bold tracking-tight transition-colors leading-tight ${
                 isScrolled ? 'text-gray-900' : 'text-white'
