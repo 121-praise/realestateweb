@@ -8,7 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Building2 className="h-8 w-8 text-amber-600" />
+              <img
+                      src="/logo.jpg"
+                      alt="Pervenu Properties Logo"
+                      className={`h-8 w-auto transition-opacity`}
+      />
               <div>
                 <span className="text-sm font-bold text-white">Pervenu Homes</span>
                 <span className="text-xs font-light text-gray-400 block">& Properties Nigerian Limited</span>
