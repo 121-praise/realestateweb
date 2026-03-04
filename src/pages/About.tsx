@@ -19,7 +19,7 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                Pervenu Properties is a leading diversified real estate company operating across Nigeria and international markets. We specialize in creating exceptional living and working spaces through comprehensive real estate solutions.
+                Pervenu Homes & Properties Nigerian Limited is a leading diversified real estate company operating across Nigeria and international markets. We specialize in creating exceptional living and working spaces through comprehensive real estate solutions.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 Our integrated approach combines real estate development, architecture, engineering, and property services to deliver projects that exceed expectations. With a commitment to innovation, quality, and client satisfaction, we've established ourselves as a trusted name in the industry.
@@ -107,10 +107,38 @@ export default function About() {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Leadership</h2>
+            <p className="text-xl text-gray-600">Visionary leaders driving excellence</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Chief Executive Officer</h3>
+              <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                Our CEO brings over two decades of experience in real estate development and commercial property management. With a visionary approach to urban development and a deep understanding of market dynamics, they have successfully led Pervenu Homes & Properties Nigerian Limited through exponential growth and expansion.
+              </p>
+              <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                Under their strategic leadership, the company has evolved from a regional player to a nationally recognized brand, with projects spanning residential, commercial, and mixed-use developments across major Nigerian cities and internationally.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Their commitment to sustainable building practices and innovative design has earned numerous industry awards and recognition from international bodies. They are passionate about creating spaces that not only meet but exceed client expectations and contribute positively to communities.
+              </p>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <div className="h-96 bg-cover bg-center rounded-lg shadow-xl" style={{ backgroundImage: 'url(https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Pervenu Properties?</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose Pervenu Homes & Properties?</h2>
             <p className="text-xl text-gray-300">What sets us apart in the real estate industry</p>
           </div>
 

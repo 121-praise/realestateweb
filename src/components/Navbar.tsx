@@ -45,15 +45,15 @@ export default function Navbar() {
               isScrolled ? 'text-amber-600' : 'text-white'
             }`} />
             <div>
-              <span className={`text-xl font-bold tracking-tight transition-colors ${
+              <span className={`text-sm font-bold tracking-tight transition-colors leading-tight ${
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}>
-                Pervenu
+                Pervenu Homes
               </span>
-              <span className={`text-xl font-light transition-colors ${
+              <span className={`text-xs font-light transition-colors block ${
                 isScrolled ? 'text-gray-600' : 'text-white'
               }`}>
-                {' '}Properties
+                & Properties Nigerian Limited
               </span>
             </div>
           </Link>

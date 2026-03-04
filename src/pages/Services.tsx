@@ -62,16 +62,18 @@ export default function Services() {
     {
       icon: Palette,
       title: 'Interior Design',
-      description: 'Transform interior spaces into elegant, functional, and inspiring environments.',
+      description: 'Transform interior spaces into elegant, functional, and inspiring environments. In collaboration with Perla Lichi, we are the exclusive West Africa branch, delivering world-class interior solutions.',
       features: [
         'Space planning and layout',
         'Custom furniture design',
         'Color and material selection',
         'Lighting design',
         'Kitchen and bathroom design',
-        'Smart home integration'
+        'Smart home integration',
+        'Partnership with Perla Lichi',
+        'International design standards'
       ],
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: PaintBucket,
@@ -143,6 +145,37 @@ export default function Services() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Perla Lichi Partnership</h2>
+            <p className="text-xl text-gray-600">Exclusive Interior Design Collaboration</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">West Africa's Premier Interior Design Partner</h3>
+              <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                Pervenu Homes & Properties Nigerian Limited is proud to partner with Perla Lichi, bringing world-class interior design expertise to the West African market. This exclusive collaboration enables us to deliver internationally acclaimed interior solutions for our most discerning clients.
+              </p>
+              <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                As the authorized West Africa branch of Perla Lichi's interior design portfolio, we combine local market knowledge with global design trends. Our collaborative approach ensures that every interior space reflects both contemporary elegance and functional perfection.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                From residential interiors to commercial spaces, our partnership delivers curated designs that elevate standards and create memorable environments. We work seamlessly with our clients to translate their vision into sophisticated, timeless spaces.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+            </div>
           </div>
         </div>
       </section>

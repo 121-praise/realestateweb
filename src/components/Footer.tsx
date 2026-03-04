@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Building2 className="h-8 w-8 text-amber-600" />
               <div>
-                <span className="text-xl font-bold text-white">Pervenu</span>
-                <span className="text-xl font-light text-gray-400"> Properties</span>
+                <span className="text-sm font-bold text-white">Pervenu Homes</span>
+                <span className="text-xs font-light text-gray-400 block">& Properties Nigerian Limited</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-4">
@@ -86,7 +86,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Pervenu Properties. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Pervenu Homes & Properties Nigerian Limited. All Rights Reserved.
           </p>
         </div>
       </div>

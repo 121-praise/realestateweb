@@ -161,7 +161,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Welcome to Pervenu Properties</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Welcome to Pervenu Homes & Properties Nigerian Limited</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A diversified real estate company committed to excellence in development, architecture, engineering, and property services across Nigeria and beyond.
             </p>
