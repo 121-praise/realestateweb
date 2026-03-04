@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronLeft, ChevronRight, Home, Building2, Ruler, Wrench, Palette, Star } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, HomeIcon, Building2, Ruler, Wrench, Palette, Star } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const heroSlides = [
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
             <div className="text-center p-6">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Home className="text-amber-600" size={32} />
+                <HomeIcon className="text-amber-600" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">500+</h3>
               <p className="text-gray-600">Properties Sold</p>
@@ -203,7 +203,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { icon: Building2, title: 'Real Estate Development', desc: 'Creating exceptional residential and commercial spaces' },
-              { icon: Home, title: 'Property Sales & Leasing', desc: 'Expert guidance in buying, selling, and leasing properties' },
+              { icon: HomeIcon, title: 'Property Sales & Leasing', desc: 'Expert guidance in buying, selling, and leasing properties' },
               { icon: Ruler, title: 'Architecture & Design', desc: 'Innovative architectural solutions and building design' },
               { icon: Wrench, title: 'Civil Engineering', desc: 'Structural engineering and construction management' },
               { icon: Palette, title: 'Interior Design', desc: 'Transform spaces with elegant interior solutions' },
