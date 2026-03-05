@@ -74,15 +74,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-amber-600 mt-1 flex-shrink-0" />
-                <span className="text-sm">123 Victoria Island, Lagos, Nigeria</span>
+                <span className="text-sm">Address Km 22, Princess And Angel Mall, Lekki-epe Expressway, Lekki, Ajah, Lagos, Nigeria</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-amber-600 flex-shrink-0" />
-                <span className="text-sm">+234 (0) 800 123 4567</span>
+                <span className="text-sm">+234 (0) 803 455 5517</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Phone size={18} className="text-amber-600 flex-shrink-0" />
+                <span className="text-sm">+234 (0) 807 753 9662</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-amber-600 flex-shrink-0" />
-                <span className="text-sm">info@pervenuproperties.com</span>
+                <span className="text-sm">pervenuhomesandproperties@gmail.com</span>
               </li>
             </ul>
           </div>

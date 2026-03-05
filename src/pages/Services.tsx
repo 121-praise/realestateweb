@@ -93,7 +93,7 @@ export default function Services() {
 
   return (
     <div>
-      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}>
+      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(/logo.jpg)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -171,10 +171,10 @@ export default function Services() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: "url('/1.jpg')" }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: "url('/2.jpg')" }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: "url('/3.jpg')" }} />
+              <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: "url('/4.jpg')" }} />
             </div>
           </div>
         </div>

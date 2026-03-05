@@ -5,9 +5,9 @@ import { supabase } from '../lib/supabase';
 
 const heroSlides = [
   {
-    image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: 'logo.jpg',
     title: 'Building the Future of Smart Living',
-    subtitle: 'Luxury properties designed for modern lifestyles'
+    subtitle: 'Making your dream home a reality'
   },
   {
     image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920',

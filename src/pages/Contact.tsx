@@ -64,40 +64,39 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4">
                     <MapPin className="text-amber-600" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
-                    <p className="text-gray-600">123 Victoria Island</p>
-                    <p className="text-gray-600">Lagos, Nigeria</p>
+                    <p className="text-gray-600">Address Km 22, Princess And Angel Mall, Lekki-epe </p>
+                    <p className="text-gray-600">Expressway, Lekki, Ajah, Lagos, Nigeria</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4">
                     <Phone className="text-amber-600" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone Numbers</h3>
-                    <p className="text-gray-600">+234 (0) 800 123 4567</p>
-                    <p className="text-gray-600">+234 (0) 800 765 4321</p>
+                    <p className="text-gray-600">+234 (0) 803 455 5517</p>
+                    <p className="text-gray-600">+234 (0) 807 753 9662</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4">
                     <Mail className="text-amber-600" size={24} />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email Addresses</h3>
-                    <p className="text-gray-600">info@pervenuproperties.com</p>
-                    <p className="text-gray-600">sales@pervenuproperties.com</p>
+                    <p className="text-gray-600">pervenuhomesandproperties@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-amber-100 p-3 rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4">
                     <Clock className="text-amber-600" size={24} />
                   </div>
                   <div>
@@ -129,8 +128,8 @@ export default function Contact() {
             </div>
 
             <div>
-              <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+              <div className="bg-amber-500 p-8 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
 
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
@@ -146,7 +145,7 @@ export default function Contact() {
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                       Full Name *
                     </label>
                     <input
@@ -162,7 +161,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                       Email Address *
                     </label>
                     <input
@@ -178,7 +177,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
                       Phone Number
                     </label>
                     <input
@@ -193,7 +192,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                       Message *
                     </label>
                     <textarea
@@ -211,7 +210,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-amber-600 hover:bg-amber-700 disabled:bg-gray-400 text-white py-4 rounded-md font-semibold text-lg transition-colors"
+                    className="w-full bg-white hover:bg-gray-700 disabled:bg-gray-400 text-amber-600 py-4 rounded-md font-semibold text-lg transition-colors"
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
@@ -226,15 +225,12 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7589789847396!2d3.4201426!3d6.428055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Office Location"
-            />
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3706860835!2d3.600468708650532!3d6.474643793490117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf98b7dddd597%3A0xeb05ff7f9b896c91!2sPrincess%20%26%20Angel%20Mall!5e0!3m2!1sen!2sng!4v1772703789399!5m2!1sen!2sng"
+                    className="w-full h-96 rounded-lg border-0"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+/>
           </div>
         </div>
       </section>
@@ -244,17 +240,17 @@ export default function Contact() {
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">Visit Our Office</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Schedule a consultation at our Victoria Island office. Our team is ready to discuss your real estate needs.
+              Schedule a consultation at our Lekki office. Our team is ready to discuss your real estate needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+2348001234567"
+                href="tel:+2348034555517"
                 className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-md font-semibold text-lg transition-colors"
               >
                 Call Now
               </a>
               <a
-                href="mailto:info@pervenuproperties.com"
+                href="pervenuhomesandproperties@gmail.com"
                 className="inline-block bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-md font-semibold text-lg transition-colors"
               >
                 Email Us
