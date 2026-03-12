@@ -63,10 +63,10 @@ export default function About() {
               
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(45.jpeg)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(27.jpeg)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(36.jpeg)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(37.jpeg)' }} />
             </div>
           </div>
         </div>

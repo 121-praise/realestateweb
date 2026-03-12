@@ -10,17 +10,17 @@ const heroSlides = [
     subtitle: 'Making your dream home a reality'
   },
   {
-    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '23.jpeg',
     title: 'Architectural Excellence Meets Innovation',
     subtitle: 'Award-winning designs that inspire and endure'
   },
   {
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '24.jpeg',
     title: 'Your Dream Property Awaits',
     subtitle: 'Discover premium real estate in prime locations'
   },
   {
-    image: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: '36.jpeg',
     title: 'Transforming Visions Into Reality',
     subtitle: 'From concept to completion with unmatched expertise'
   }

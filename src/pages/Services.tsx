@@ -29,7 +29,7 @@ export default function Services() {
         'Market analysis and research',
         'Investment consultation'
       ],
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '41.jpeg'
     },
     {
       icon: Ruler,
@@ -43,7 +43,7 @@ export default function Services() {
         'Sustainable design solutions',
         'Renovation and remodeling'
       ],
-      image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '29.jpeg'
     },
     {
       icon: Wrench,
@@ -57,7 +57,7 @@ export default function Services() {
         'Infrastructure development',
         'Building code compliance'
       ],
-      image: 'https://images.pexels.com/photos/2876511/pexels-photo-2876511.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '31.jpeg'
     },
     {
       icon: Palette,
@@ -73,7 +73,7 @@ export default function Services() {
         'Partnership with Perla Lichi',
         'International design standards'
       ],
-      image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '25.jpeg'
     },
     {
       icon: PaintBucket,
@@ -87,7 +87,7 @@ export default function Services() {
         'Exterior lighting design',
         'Sustainable landscaping'
       ],
-      image: 'https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: '23.jpeg'
     }
   ];
 

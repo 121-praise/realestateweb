@@ -74,30 +74,30 @@ export default function Locations() {
 
   const internationalLocations = [
     {
-      name: 'London, UK',
-      image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Luxury properties in prime London locations for international investors.'
+      name: 'Lagos',
+      image: '23.jpeg',
+      description: 'Luxury properties in prime locations of Lagos.'
     },
     {
-      name: 'Dubai, UAE',
-      image: 'https://images.pexels.com/photos/1470502/pexels-photo-1470502.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'High-end commercial and residential developments in the heart of Dubai.'
+      name: 'FCT-Abuja',
+      image: '24.jpeg',
+      description: 'High-end commercial and residential developments in the city of Abuja.'
     },
     {
-      name: 'New York, USA',
-      image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Premium Manhattan properties and investment opportunities.'
+      name: 'Port Harcourt',
+      image: '28.jpeg',
+      description: 'Premium properties and investment opportunities in Port Harcourt.'
     },
     {
-      name: 'Ghana',
-      image: 'https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Expanding portfolio in Accra and other major Ghanaian cities.'
+      name: 'Comming Soon ',
+      image: '39.jpeg',
+      description: 'Expanding through other major cities.'
     }
   ];
 
   return (
     <div>
-      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}>
+      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(37.jpeg)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -107,57 +107,12 @@ export default function Locations() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nigeria Locations</h2>
-            <p className="text-xl text-gray-600">
-              We operate in the most prestigious and strategic locations across Nigeria
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {locationStats.map((location, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                <div className="h-80 relative">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-300"
-                    style={{ backgroundImage: `url(${location.image})` }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="flex items-center mb-2">
-                      <MapPin className="text-amber-600 mr-2" size={24} />
-                      <h3 className="text-2xl font-bold">{location.name}</h3>
-                    </div>
-                    <p className="text-gray-200 text-sm mb-4">{location.description}</p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center">
-                        <Building className="text-amber-600 mr-2" size={20} />
-                        <span className="font-semibold">{location.count} Properties Available</span>
-                      </div>
-                      <Link
-                        to="/properties"
-                        className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-md text-sm font-semibold transition-colors"
-                      >
-                        View All
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">International Presence</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Locations in Nigeria</h2>
             <p className="text-xl text-gray-600">
-              Expanding our portfolio to serve clients globally
+             We operate in the most prestigious and strategic locations across Nigeria
             </p>
           </div>
 
@@ -216,7 +171,7 @@ export default function Locations() {
                 </li>
               </ul>
             </div>
-            <div className="h-96 bg-cover bg-center rounded-lg shadow-xl" style={{ backgroundImage: 'url(https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=800)' }} />
+            <div className="h-96 bg-cover bg-center rounded-lg shadow-xl" style={{ backgroundImage: 'url(38.jpeg)' }} />
           </div>
         </div>
       </section>
