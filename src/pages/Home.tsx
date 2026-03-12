@@ -5,12 +5,12 @@ import { supabase } from '../lib/supabase';
 
 const heroSlides = [
   {
-    image: 'logo.jpg',
+    image: '23.jpeg',
     title: 'Building the Future of Smart Living',
     subtitle: 'Making your dream home a reality'
   },
   {
-    image: '23.jpeg',
+    image: 'logo.jpg',
     title: 'Architectural Excellence Meets Innovation',
     subtitle: 'Award-winning designs that inspire and endure'
   },

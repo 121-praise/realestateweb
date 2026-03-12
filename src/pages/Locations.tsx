@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MapPin, Building } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 
@@ -11,7 +11,7 @@ interface LocationData {
 }
 
 export default function Locations() {
-  const [locationStats, setLocationStats] = useState<LocationData[]>([]);
+  const [] = useState<LocationData[]>([]);
 
   useEffect(() => {
     fetchLocationStats();
@@ -29,7 +29,7 @@ export default function Locations() {
         locationCounts[property.location] = (locationCounts[property.location] || 0) + 1;
       });
 
-      const locations: LocationData[] = [
+      /*const locations: LocationData[] = [
         {
           name: 'Lekki Phase 1',
           count: locationCounts['Lekki Phase 1'] || 0,
@@ -69,7 +69,7 @@ export default function Locations() {
       ];
 
       setLocationStats(locations);
-    }
+   */ }
   };
 
   const internationalLocations = [

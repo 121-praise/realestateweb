@@ -3,7 +3,7 @@ import { Award, Users, TrendingUp, Shield } from 'lucide-react';
 export default function About() {
   return (
     <div>
-      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}>
+      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(23.jpeg)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
