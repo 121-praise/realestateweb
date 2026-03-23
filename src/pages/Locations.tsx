@@ -89,7 +89,7 @@ export default function Locations() {
       description: 'Premium properties and investment opportunities in Port Harcourt.'
     },
     {
-      name: 'Comming Soon ',
+      name: 'Coming Soon ',
       image: '39.jpeg',
       description: 'Expanding through other major cities.'
     }

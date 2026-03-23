@@ -52,7 +52,7 @@ export default function About() {
                 Our Scope of Work among other includes the Design and Execution of Housing Estate Project Development on Turn Key basis. We are committed to high quality work of computerizing prices . 
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                We are fully computerized and equipped with modern day machinery and tools. Our team includes includes high qualified tested and experienced professionals and technicians in various fields of Real Estate.
+                We are fully computerized and equipped with modern day machinery and tools. Our team includes high qualified tested and experienced professionals and technicians in various fields of Real Estate.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 Pervenu Homes & Properties Nigerian Limited is a leading diversified real estate company operating across Nigeria and international markets. We specialize in creating exceptional living and working spaces through comprehensive real estate solutions.

@@ -44,7 +44,7 @@ export default function Navbar() {
             <img
                   src="/logo.jpg"
                   alt="Pervenu Properties Logo"
-                  className={`h-12 w-auto transition-opacity ${
+                  className={`h-20 w-auto transition-opacity ${
                     isScrolled ? "opacity-100" : "opacity-80"
                   }`}
 />

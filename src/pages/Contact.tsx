@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = 'service_0xli2lh';
+const TEMPLATE_ID = 'template_98gsk8v';
+const PUBLIC_KEY = 'SsNjL9p6OaKM2k_M3';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,12 +29,18 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([formData]);
-
-      if (error) throw error;
-
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          to_email: 'pervenuhomesandproperties@gmail.com',
+        },
+        PUBLIC_KEY
+      );
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
@@ -69,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
-                    <p className="text-gray-600">Address Km 22, Princess And Angel Mall, Lekki-epe </p>
+                    <p className="text-gray-600">Address Km 22, Princess And Angel Mall, Lekki-epe</p>
                     <p className="text-gray-600">Expressway, Lekki, Ajah, Lagos, Nigeria</p>
                   </div>
                 </div>
@@ -225,12 +235,12 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3706860835!2d3.600468708650532!3d6.474643793490117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf98b7dddd597%3A0xeb05ff7f9b896c91!2sPrincess%20%26%20Angel%20Mall!5e0!3m2!1sen!2sng!4v1772703789399!5m2!1sen!2sng"
-                    className="w-full h-96 rounded-lg border-0"
-                    loading="lazy"
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
-/>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3706860835!2d3.600468708650532!3d6.474643793490117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf98b7dddd597%3A0xeb05ff7f9b896c91!2sPrincess%20%26%20Angel%20Mall!5e0!3m2!1sen!2sng!4v1772703789399!5m2!1sen!2sng"
+              className="w-full h-96 rounded-lg border-0"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
@@ -250,7 +260,7 @@ export default function Contact() {
                 Call Now
               </a>
               <a
-                href="pervenuhomesandproperties@gmail.com"
+                href="mailto:pervenuhomesandproperties@gmail.com"
                 className="inline-block bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-md font-semibold text-lg transition-colors"
               >
                 Email Us
