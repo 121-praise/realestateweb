@@ -8,12 +8,12 @@ export default function About() {
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">About Us</h1>
-            <p className="text-xl md:text-2xl text-gray-200">Pervenu Homes and Properties Nigerian Limited </p>
+            <p className="text-xl md:text-2xl text-gray-200">Pervenu Homes and Properties Nigerian Limited</p>
           </div>
         </div>
       </section>
 
-        <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-10 rounded-lg shadow-md">
@@ -43,13 +43,13 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                PERVENU HOMES & PROPERTIES NIGERIAN LIMITED, is an integrated consortium of qualified professionals with efficiency and dynamic approach to undertake Real Estate Development, Property Management, Planning, Architectural Design, Surveying, Project Engineering, Procurement and Contracting Services for Companies, Government, Institutions, Individual in Nigeria and beyond with satisfaction guaranteed . The company has an initial paid up capital of #130 Million shares. 
+                PERVENU HOMES & PROPERTIES NIGERIAN LIMITED, is an integrated consortium of qualified professionals with efficiency and dynamic approach to undertake Real Estate Development, Property Management, Planning, Architectural Design, Surveying, Project Engineering, Procurement and Contracting Services for Companies, Government, Institutions, Individual in Nigeria and beyond with satisfaction guaranteed. The company has an initial paid up capital of #130 Million shares.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                We are formally incorporated as Limited Liability Company under the companies and allied matters act 1990 with registration number RC:  1898936. Though the company is relatively young, the experience of its Board of Directors and Associates Partners, Management and Technical Staff earned over the years in other companies in the Real Estate and Construction Industry in Nigeria is a major asset of the company. 
+                We are formally incorporated as Limited Liability Company under the companies and allied matters act 1990 with registration number RC: 1898936. Though the company is relatively young, the experience of its Board of Directors and Associates Partners, Management and Technical Staff earned over the years in other companies in the Real Estate and Construction Industry in Nigeria is a major asset of the company.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                Our Scope of Work among other includes the Design and Execution of Housing Estate Project Development on Turn Key basis. We are committed to high quality work of computerizing prices . 
+                Our Scope of Work among other includes the Design and Execution of Housing Estate Project Development on Turn Key basis. We are committed to high quality work of computerizing prices.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 We are fully computerized and equipped with modern day machinery and tools. Our team includes high qualified tested and experienced professionals and technicians in various fields of Real Estate.
@@ -60,7 +60,6 @@ export default function About() {
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 Our integrated approach combines real estate development, architecture, engineering, and property services to deliver projects that exceed expectations. With a commitment to innovation, quality, and client satisfaction, we've established ourselves as a trusted name in the industry.
               </p>
-              
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(45.jpeg)' }} />
@@ -74,13 +73,11 @@ export default function About() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="order-2 lg:order-1">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Chief Executive Officer</h3>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                Our CEO Chief Engineer Kenny Uzor Ubah . His achievement in Real Estate Development sector can not be exhausted, with over ten (10) years in Real Estate Development Practice. 
+                Our CEO Chief Engineer Kenny Uzor Ubah. His achievement in Real Estate Development sector can not be exhausted, with over ten (10) years in Real Estate Development Practice.
               </p>
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
                 He has brought over two decades of experience in real estate development and commercial property management. With a visionary approach to urban development and a deep understanding of market dynamics, he has successfully led Pervenu Homes & Properties Nigerian Limited through exponential growth and expansion.
@@ -93,17 +90,21 @@ export default function About() {
               </p>
             </div>
 
-            <div className="order-1 lg:order-2">
-             <div
-  className="h-96 bg-cover bg-center rounded-lg shadow-xl"
-  style={{ backgroundImage: "url('/ceo.jpg')" }}
-/>
+            <div className="order-1 lg:order-2 flex flex-col gap-4">
+              <div
+                className="h-96 bg-cover bg-center rounded-lg shadow-xl"
+                style={{ backgroundImage: "url('/ceo.jpg')" }}
+              />
+              <div
+                className="h-96 bg-cover bg-center rounded-lg shadow-xl bg-gray-100"
+                style={{ backgroundImage: "url('/51.jpeg')" }}
+              />
             </div>
           </div>
         </div>
       </section>
 
-       <section className="py-20 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
@@ -145,7 +146,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
 
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

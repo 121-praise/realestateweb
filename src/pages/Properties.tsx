@@ -1,75 +1,58 @@
-import { useState, useEffect } from 'react';
-import { Bed, Bath, Maximize, MapPin, Filter } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+import { useState } from 'react';
+import { X, Play } from 'lucide-react';
 
-interface Property {
+const images = [
+  { id: '1', src: '/31.jpeg', alt: 'Property 1', type: 'image' },
+  { id: '2', src: '/23.jpeg', alt: 'Property 2', type: 'image' },
+  { id: '3', src: '/30.jpeg', alt: 'Property 3', type: 'image' },
+  { id: '4', src: '/42.jpeg', alt: 'Property 4', type: 'image' },
+  { id: '5', src: '/50.jpeg', alt: 'Property 5', type: 'image' },
+  { id: '6', src: '/24.jpeg', alt: 'Property 6', type: 'image' },
+  { id: '7', src: '/25.jpeg', alt: 'Property 7', type: 'image' },
+  { id: '8', src: '/27.jpeg', alt: 'Property 8', type: 'image' },
+  { id: '9', src: '/28.jpeg', alt: 'Property 9', type: 'image' },
+  { id: '10', src: '/29.jpeg', alt: 'Property 10', type: 'image' },
+  { id: '11', src: '/3.jpg', alt: 'Property 11', type: 'image' },
+  { id: '12', src: '/32.jpeg', alt: 'Property 12', type: 'image' },
+  { id: '13', src: '/36.jpeg', alt: 'Property 13', type: 'image' },
+  { id: '14', src: '/37.jpeg', alt: 'Property 14', type: 'image' },
+  { id: '15', src: '/38.jpeg', alt: 'Property 15', type: 'image' },
+  { id: '16', src: '/39.jpeg', alt: 'Property 16', type: 'image' },
+  { id: '17', src: '/41.jpeg', alt: 'Property 17', type: 'image' },
+  { id: '18', src: '/45.jpeg', alt: 'Property 18', type: 'image' },
+  { id: '19', src: '/4.jpg', alt: 'Property 19', type: 'image' },
+  { id: '20', src: '/43.jpeg', alt: 'Property 20', type: 'image' },
+  { id: '21', src: '/44.jpeg', alt: 'Property 21', type: 'image' },
+  { id: '22', src: '/46.jpeg', alt: 'Property 22', type: 'image' },
+  { id: '23', src: '/47.jpeg', alt: 'Property 23', type: 'image' },
+  { id: '24', src: '/48.jpeg', alt: 'Property 24', type: 'image' },
+  { id: '25', src: '/49.jpeg', alt: 'Property 25', type: 'image' },
+  { id: '26', src: '/1.jpg', alt: 'Property 26', type: 'image' },
+  { id: '27', src: '/30.jpeg', alt: 'Property 27', type: 'image' },
+  { id: '28', src: '/26.jpeg', alt: 'Property 28', type: 'image' },
+  { id: '29', src: '/21.jpeg', alt: 'Property 29', type: 'image' },
+  { id: '30', src: '/22.jpeg', alt: 'Property 30', type: 'image' },
+  { id: '31', src: '/2.jpg', alt: 'Property 31', type: 'image' },
+  { id: '32', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
+];
+
+interface MediaItem {
   id: string;
-  name: string;
-  description: string;
-  property_type: string;
-  listing_type: string;
-  location: string;
-  price: number;
-  bedrooms: number;
-  bathrooms: number;
-  square_feet: number;
-  image_url: string;
-  status: string;
+  src: string;
+  alt: string;
+  type: string;
+  thumbnail?: string;
 }
 
 export default function Properties() {
-  const [properties, setProperties] = useState<Property[]>([]);
-  const [filteredProperties, setFilteredProperties] = useState<Property[]>([]);
-  const [selectedType, setSelectedType] = useState('All');
-  const [selectedLocation, setSelectedLocation] = useState('All');
-  const [selectedListing, setSelectedListing] = useState('All');
-  const [showFilters, setShowFilters] = useState(false);
-
-  useEffect(() => {
-    fetchProperties();
-  }, []);
-
-  useEffect(() => {
-    filterProperties();
-  }, [properties, selectedType, selectedLocation, selectedListing]);
-
-  const fetchProperties = async () => {
-    const { data } = await supabase
-      .from('properties')
-      .select('*')
-      .eq('status', 'Available')
-      .order('created_at', { ascending: false });
-
-    if (data) {
-      setProperties(data);
-    }
-  };
-
-  const filterProperties = () => {
-    let filtered = properties;
-
-    if (selectedType !== 'All') {
-      filtered = filtered.filter(p => p.property_type === selectedType);
-    }
-
-    if (selectedLocation !== 'All') {
-      filtered = filtered.filter(p => p.location === selectedLocation);
-    }
-
-    if (selectedListing !== 'All') {
-      filtered = filtered.filter(p => p.listing_type === selectedListing);
-    }
-
-    setFilteredProperties(filtered);
-  };
-
-  const locations = ['All', ...Array.from(new Set(properties.map(p => p.location)))];
-  const types = ['All', 'Residential', 'Commercial'];
-  const listings = ['All', 'Sale', 'Lease'];
+  const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
 
   return (
     <div>
-      <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}>
+      <section
+        className="relative h-96 bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}
+      >
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -81,154 +64,76 @@ export default function Properties() {
 
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
-            <div className="flex items-center justify-between mb-4 md:mb-0">
-              <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                <Filter size={24} className="text-amber-600" />
-                Filter Properties
-              </h2>
-              <button
-                onClick={() => setShowFilters(!showFilters)}
-                className="md:hidden bg-amber-600 text-white px-4 py-2 rounded-md"
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">Property Gallery</h2>
+            <p className="text-gray-600">Click any image or video to view full screen</p>
+          </div>
+
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            {images.map((item) => (
+              <div
+                key={item.id}
+                className="break-inside-avoid cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 relative"
+                onClick={() => setSelectedMedia(item)}
               >
-                {showFilters ? 'Hide Filters' : 'Show Filters'}
-              </button>
-            </div>
-
-            <div className={`${showFilters ? 'block' : 'hidden'} md:block`}>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Property Type
-                  </label>
-                  <select
-                    value={selectedType}
-                    onChange={(e) => setSelectedType(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-                  >
-                    {types.map((type) => (
-                      <option key={type} value={type}>
-                        {type}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Location
-                  </label>
-                  <select
-                    value={selectedLocation}
-                    onChange={(e) => setSelectedLocation(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-                  >
-                    {locations.map((location) => (
-                      <option key={location} value={location}>
-                        {location}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Listing Type
-                  </label>
-                  <select
-                    value={selectedListing}
-                    onChange={(e) => setSelectedListing(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-                  >
-                    {listings.map((listing) => (
-                      <option key={listing} value={listing}>
-                        {listing}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <p className="text-gray-600">
-              Showing <span className="font-semibold text-gray-900">{filteredProperties.length}</span> properties
-            </p>
-          </div>
-
-          {filteredProperties.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="text-xl text-gray-600">No properties found matching your criteria.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProperties.map((property) => (
-                <div key={property.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all group">
-                  <div className="relative h-64 overflow-hidden">
-                    <div
-                      className="h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-300"
-                      style={{ backgroundImage: `url(${property.image_url})` }}
+                {item.type === 'video' ? (
+                  <>
+                    <video
+                      src={item.src}
+                      className="w-full object-cover hover:scale-105 transition-transform duration-500"
+                      muted
+                      playsInline
+                      preload="metadata"
                     />
-                    <div className="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      For {property.listing_type}
-                    </div>
-                    <div className="absolute top-4 left-4 bg-gray-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      {property.property_type}
-                    </div>
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{property.name}</h3>
-
-                    <div className="flex items-center text-gray-600 mb-4">
-                      <MapPin size={16} className="mr-1" />
-                      <span className="text-sm">{property.location}</span>
-                    </div>
-
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {property.description}
-                    </p>
-
-                    <div className="flex gap-4 text-sm text-gray-600 mb-4 pb-4 border-b">
-                      {property.bedrooms > 0 && (
-                        <div className="flex items-center gap-1">
-                          <Bed size={16} />
-                          <span>{property.bedrooms} Beds</span>
-                        </div>
-                      )}
-                      {property.bathrooms > 0 && (
-                        <div className="flex items-center gap-1">
-                          <Bath size={16} />
-                          <span>{property.bathrooms} Baths</span>
-                        </div>
-                      )}
-                      {property.square_feet && (
-                        <div className="flex items-center gap-1">
-                          <Maximize size={16} />
-                          <span>{property.square_feet.toLocaleString()} sqft</span>
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-500">Price</p>
-                        <p className="text-2xl font-bold text-amber-600">
-                          ₦{(property.price / 1000000).toFixed(1)}M
-                        </p>
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-20 transition-all duration-300">
+                      <div className="bg-white bg-opacity-90 rounded-full p-4">
+                        <Play className="text-amber-600" size={28} fill="currentColor" />
                       </div>
-                      <button className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-md font-semibold transition-colors">
-                        View Details
-                      </button>
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+                  </>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
+
+      {selectedMedia && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedMedia(null)}
+        >
+          <button
+            onClick={() => setSelectedMedia(null)}
+            className="absolute top-4 right-4 bg-white text-gray-900 p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors z-10"
+          >
+            <X size={20} />
+          </button>
+
+          {selectedMedia.type === 'video' ? (
+            <video
+              src={selectedMedia.src}
+              className="max-w-full max-h-[90vh] rounded-lg"
+              controls
+              autoPlay
+              onClick={(e) => e.stopPropagation()}
+            />
+          ) : (
+            <img
+              src={selectedMedia.src}
+              alt="Full screen view"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          )}
+        </div>
+      )}
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

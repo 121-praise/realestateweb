@@ -5,7 +5,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Properties from './pages/Properties';
 import Locations from './pages/Locations';
-import Projects from './pages/Projects';
+//import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
@@ -18,12 +18,12 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="properties" element={<Properties />} />
           <Route path="locations" element={<Locations />} />
-          <Route path="projects" element={<Projects />} />
+         
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>
   );
 }
-
+//<Route path="projects" element={<Projects />} />
 export default App;

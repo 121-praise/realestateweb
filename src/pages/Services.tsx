@@ -1,7 +1,10 @@
-import { Building2, Home, Ruler, Wrench, Palette, PaintBucket, Check } from 'lucide-react';
+import { useState } from 'react';
+import { Building2, Home, Ruler, Wrench, Palette, PaintBucket, Check, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const services = [
     {
       icon: Building2,
@@ -177,8 +180,45 @@ export default function Services() {
               <div className="h-48 bg-cover bg-center rounded-lg shadow-lg" style={{ backgroundImage: "url('/4.jpg')" }} />
             </div>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            <div
+              className="h-[500px] bg-cover bg-center rounded-lg shadow-lg cursor-pointer hover:shadow-xl hover:scale-[1.01] transition-all duration-300"
+              style={{ backgroundImage: "url('/perlapaper.jpeg')" }}
+              onClick={() => setSelectedImage('/perlapaper.jpeg')}
+            />
+            <div className="rounded-lg shadow-lg overflow-hidden h-[500px]">
+              <iframe
+                src="https://www.youtube.com/embed/DN_xZIQ8uGM?si=JG-WJHTjfZfo4Zby"
+                title="Perla Lichi Design International"
+                className="w-full h-full"
+                allowFullScreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              />
+            </div>
+          </div>
         </div>
       </section>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 bg-white text-gray-900 p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors"
+          >
+            <X size={20} />
+          </button>
+          <img
+            src={selectedImage}
+            alt="Full screen view"
+            className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
