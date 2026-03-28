@@ -32,7 +32,7 @@ export default function Services() {
         'Market analysis and research',
         'Investment consultation'
       ],
-      image: '41.jpeg'
+      image: '50.jpeg'
     },
     {
       icon: Ruler,
