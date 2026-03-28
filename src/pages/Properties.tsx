@@ -42,7 +42,7 @@ const images = [
   //{ id: '38', src: '/58.jpeg', alt: 'Property 38', type: 'image' },
   { id: '39', src: '/59.jpeg', alt: 'Property 39', type: 'image' },
   { id: '40', src: '/60.jpeg', alt: 'Property 40', type: 'image' },
-  //{ id: '41', src: '/61.jpeg', alt: 'Property 41', type: 'image' },
+  {// id: '41', src: '/61.jpeg', alt: 'Property 41', type: 'image' },
   //{ id: '42', src: '/62.jpeg', alt: 'Property 42', type: 'image' },
   { id: '43', src: '/63.jpeg', alt: 'Property 43', type: 'image' },
   { id: '44', src: '/64.jpeg', alt: 'Property 44', type: 'image' },
