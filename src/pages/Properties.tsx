@@ -47,11 +47,11 @@ const images = [
   { id: '43', src: '/63.jpeg', alt: 'Property 43', type: 'image' },
   { id: '44', src: '/64.jpeg', alt: 'Property 44', type: 'image' },
   { id: '45', src: '/65.jpeg', alt: 'Property 45', type: 'image' },
-  { id: '46', src: '/66.jpeg', alt: 'Property 46', type: 'image' },
+ // { id: '46', src: '/66.jpeg', alt: 'Property 46', type: 'image' },
   { id: '47', src: '/67.jpeg', alt: 'Property 47', type: 'image' },
   { id: '48', src: '/68.jpeg', alt: 'Property 48', type: 'image' },
   { id: '49', src: '/69.jpeg', alt: 'Property 49', type: 'image' },
-  { id: '50', src: '/70.jpeg', alt: 'Property 50', type: 'image' },
+ // { id: '50', src: '/70.jpeg', alt: 'Property 50', type: 'image' },
   { id: '51', src: '/71.jpeg', alt: 'Property 51', type: 'image' },
   { id: '52', src: '/72.jpeg', alt: 'Property 52', type: 'image' },
   { id: '53', src: '/73.jpeg', alt: 'Property 53', type: 'image' },
@@ -81,8 +81,16 @@ const images = [
   { id: '77', src: '/97.jpeg', alt: 'Property 77', type: 'image' },
   { id: '78', src: '/98.jpeg', alt: 'Property 78', type: 'image' },
   { id: '79', src: '/99.jpeg', alt: 'Property 79', type: 'image' },
-  //{ id: '80', src: '/100.jpeg', alt: 'Property 80', type: 'image' },
-  { id: '80', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
+  { id: '80', src: '/100.jpeg', alt: 'Property 80', type: 'image' },
+  { id: '81', src: '/101jpeg', alt: 'Property 81', type: 'image' },
+  { id: '82', src: '/102.jpeg', alt: 'Property 82', type: 'image' },
+  { id: '83', src: '/103.jpeg', alt: 'Property 83', type: 'image' },
+  //{ id: '84', src: '/104.jpeg', alt: 'Property 84', type: 'image' },
+//{ id: '85', src: '/105.jpeg', alt: 'Property 85', type: 'image' },
+//{ id: '86', src: '/106.jpeg', alt: 'Property 86', type: 'image' },
+//{ id: '87', src: '/107.jpeg', alt: 'Property 87', type: 'image' },
+//{id: '88', src: '/108.jpeg', alt: 'Property 88', type: 'image' },
+  { id: '84', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
 ];
 
 interface MediaItem {

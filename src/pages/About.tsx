@@ -7,9 +7,17 @@ export default function About() {
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">About Us</h1>
-            <p className="text-xl md:text-2xl text-gray-200">Pervenu Homes and Properties Nigerian Limited</p>
-          </div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">About Us</h1>
+          <p className="text-xl md:text-2xl text-gray-200">Pervenu Homes and Properties Nigerian Limited</p>
+          <div className="mt-8 flex flex-col items-center gap-1">
+          <p className="text-2xl md:text-3xl font-semibold text-amber-400">We Build</p>
+          <p className="text-2xl md:text-3xl font-semibold text-amber-400">We Renovate</p>
+          <p className="text-2xl md:text-3xl font-semibold text-amber-400">We Furnish</p>
+          <p className="mt-3 text-lg md:text-xl text-white tracking-widest uppercase border-t border-amber-400 pt-3">
+      Your Complete Home Solution
+    </p>
+  </div>
+</div>
         </div>
       </section>
 
