@@ -8,7 +8,6 @@ export default function About() {
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">About Us</h1>
-          <p className="text-xl md:text-2xl text-gray-200">Pervenu Homes and Properties Nigerian Limited</p>
           <div className="mt-8 flex flex-col items-center gap-1">
           <p className="text-2xl md:text-3xl font-semibold text-amber-400">We Build</p>
           <p className="text-2xl md:text-3xl font-semibold text-amber-400">We Renovate</p>
