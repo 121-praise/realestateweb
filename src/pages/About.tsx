@@ -70,9 +70,9 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(45.jpeg)' }} />
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(27.jpeg)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(53.jpeg)' }} />
               <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(36.jpeg)' }} />
-              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(37.jpeg)' }} />
+              <div className="h-64 bg-cover bg-center rounded-lg" style={{ backgroundImage: 'url(100.jpeg)' }} />
             </div>
           </div>
         </div>

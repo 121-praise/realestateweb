@@ -86,11 +86,11 @@ const images = [
   { id: '82', src: '/102.jpeg', alt: 'Property 82', type: 'image' },
   { id: '83', src: '/103.jpeg', alt: 'Property 83', type: 'image' },
   //{ id: '84', src: '/104.jpeg', alt: 'Property 84', type: 'image' },
-//{ id: '85', src: '/105.jpeg', alt: 'Property 85', type: 'image' },
-//{ id: '86', src: '/106.jpeg', alt: 'Property 86', type: 'image' },
-//{ id: '87', src: '/107.jpeg', alt: 'Property 87', type: 'image' },
-//{id: '88', src: '/108.jpeg', alt: 'Property 88', type: 'image' },
-  { id: '84', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
+{ id: '85', src: '/105.jpeg', alt: 'Property 85', type: 'image' },
+{ id: '86', src: '/106.jpeg', alt: 'Property 86', type: 'image' },
+{ id: '87', src: '/107.jpeg', alt: 'Property 87', type: 'image' },
+{id: '88', src: '/108.jpeg', alt: 'Property 88', type: 'image' },
+  { id: '89', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
 ];
 
 interface MediaItem {
