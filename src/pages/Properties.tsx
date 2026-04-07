@@ -82,7 +82,7 @@ const images = [
   { id: '78', src: '/98.jpeg', alt: 'Property 78', type: 'image' },
   { id: '79', src: '/99.jpeg', alt: 'Property 79', type: 'image' },
   { id: '80', src: '/100.jpeg', alt: 'Property 80', type: 'image' },
-  { id: '81', src: '/101jpeg', alt: 'Property 81', type: 'image' },
+  { id: '81', src: '/101.jpeg', alt: 'Property 81', type: 'image' },
   { id: '82', src: '/102.jpeg', alt: 'Property 82', type: 'image' },
   { id: '83', src: '/103.jpeg', alt: 'Property 83', type: 'image' },
   //{ id: '84', src: '/104.jpeg', alt: 'Property 84', type: 'image' },
@@ -90,7 +90,23 @@ const images = [
 { id: '86', src: '/106.jpeg', alt: 'Property 86', type: 'image' },
 { id: '87', src: '/107.jpeg', alt: 'Property 87', type: 'image' },
 {id: '88', src: '/108.jpeg', alt: 'Property 88', type: 'image' },
-  { id: '89', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
+{id: '89', src: '/109.jpeg', alt: 'Property 89', type: 'image' },
+{id: '90', src: '/110.jpeg', alt: 'Property 90', type: 'image' },
+{id: '91', src: '/111.jpeg', alt: 'Property 91', type: 'image' },
+{id: '92', src: '/112.jpeg', alt: 'Property 92', type: 'image' },
+{id: '93', src: '/113.jpeg', alt: 'Property 93', type: 'image' },
+{id: '94', src: '/114.jpeg', alt: 'Property 94', type: 'image' },
+{id: '95', src: '/115.jpeg', alt: 'Property 95', type: 'image' },
+{id: '96', src: '/116.jpeg', alt: 'Property 96', type: 'image' },
+{id: '97', src: '/117.jpeg', alt: 'Property 97', type: 'image' },
+{id: '98', src: '/118.jpeg', alt: 'Property 98', type: 'image' },
+{id: '99', src: '/119.jpeg', alt: 'Property 99', type: 'image' },
+{id: '100', src: '/120.jpeg', alt: 'Property 100', type: 'image' },
+{id: '101', src: '/121.jpeg', alt: 'Property 101', type: 'image' },
+{id: '102', src: '/122.jpeg', alt: 'Property 102', type: 'image' },
+{id: '103', src: '/123.jpeg', alt: 'Property 103', type: 'image' },
+//{id: '104', src: '/124.jpeg', alt: 'Property 104', type: 'image' },
+  { id: '104', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
 ];
 
 interface MediaItem {
