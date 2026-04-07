@@ -105,8 +105,8 @@ const images = [
 {id: '101', src: '/121.jpeg', alt: 'Property 101', type: 'image' },
 {id: '102', src: '/122.jpeg', alt: 'Property 102', type: 'image' },
 {id: '103', src: '/123.jpeg', alt: 'Property 103', type: 'image' },
-{id: '104', src: '/124.jpeg', alt: 'Property 104', type: 'image' },
-  { id: '105', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
+//{id: '104', src: '/124.jpeg', alt: 'Property 104', type: 'image' },
+  { id: '104', src: '/v1.mp4', alt: 'Property Video 1', type: 'video', thumbnail: '/v1image.jpeg' }
 ];
 
 interface MediaItem {
